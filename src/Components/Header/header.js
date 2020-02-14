@@ -11,6 +11,8 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles(theme => ({
   toolbar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
+    backgroundColor: '#3f51b5',
+    color: '#fff'
   },
   toolbarTitle: {
     flex: 1,
@@ -32,7 +34,7 @@ const sections = [
   { title: 'Mais Você', url: 'interact' },
   { title: 'Ana Maria Braga', url: 'interact' },
   { title: 'My Videos', url: 'interact' },
-  { title: 'Feed', url: 'interact' },
+  { title: 'Feed', url: 'feed' },
 ];
 
 export default function Header(props) {
