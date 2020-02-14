@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
-import Fab from '@material-ui/core/Fab';
-import PauseIcon from '@material-ui/icons/Pause';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import React from 'react';
+import Header from '../../Components/Header/header'
+
+// import { Container } from './styles';
 
 export default function Main() {
-  const [play, setPlay] = useState(true)
   return (
-    <>
-      <Fab color="primary" aria-label="add" onClick={() => { if (play) { setPlay(false) } else { setPlay(true) } }}>
-        {play == true ? <PlayArrowIcon /> : <PauseIcon />}
-      </Fab>
-    </>
+    <React.Fragment>
+      <Header title="AlicateDev" />
+      <h1>asdsa</h1>
+    </React.Fragment>
+
   );
 }
