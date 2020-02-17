@@ -10,8 +10,8 @@ export default function DenseAppBar() {
           <div className="links">
             <a href="/">Pra Você</a>
             <a>Descobrir</a>
-            <a>Ao Vivo</a>
-            <a href="perfil">Perfil</a>
+            <a href="/interact">Ao Vivo</a>
+            <a href="/perfil">Perfil</a>
             <a>Categorias</a>
           </div>
         </div>
