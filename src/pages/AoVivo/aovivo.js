@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 // Styles
 import './aovivo.css';
 import Header from '../../Components/Header/header'
@@ -13,7 +13,7 @@ export default function AoVivo() {
     <div className="container">
       <Header />
       <div className="container1">
-        <img src={bg} />
+        <img src={bg} alt="Imagem de exemplo" />
       </div>
       <div className="container2">
         <div className="info">

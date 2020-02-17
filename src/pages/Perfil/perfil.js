@@ -7,8 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Skeleton from '@material-ui/lab/Skeleton';
 //icons
 import ShareOutlinedIcon from '@material-ui/icons/ShareOutlined';
@@ -113,7 +111,7 @@ export default function Facebook() {
         <div className="preference">
           <div className="profile">
 
-            <img src={procfile}></img>
+            <img src={procfile} alt="Imagem de perfil" />
             <p>Hermes Segundo</p>
           </div>
           <div className="itens">
@@ -121,13 +119,13 @@ export default function Facebook() {
               <h2>Preferencias</h2>
               <ArrowForwardIosIcon />
             </div>
-            <img src={prog1}></img>
-            <img src={prog2}></img>
-            <img src={prog1}></img>
+            <img src={prog1} alt="Filme sugeridos"></img>
+            <img src={prog2} alt="Filme sugeridos"></img>
+            <img src={prog1} alt="Filme sugeridos"></img>
           </div>
         </div>
         <div className="feed">
-          <div className={classes.card} className="post">
+          <div className={`${classes.card} post`}>
             <div className="item1">
               <p>Compartilhe Suas Experiências</p>
             </div>
