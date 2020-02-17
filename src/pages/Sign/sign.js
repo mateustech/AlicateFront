@@ -15,7 +15,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant="body2" align="center">
       {'Copyright © '}
       <Link color="inherit" >
         MegaHack
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     backgroundImage: 'url(https://source.unsplash.com/random)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
-      theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[50],
+    theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[50],
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.error.main
   },
   form: {
     width: '100%', // Fix IE 11 issue.
@@ -55,6 +55,19 @@ const useStyles = makeStyles(theme => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  ground: {
+    backgroundColor: '#2f3640'
+  },
+  submit: {
+    backgroundColor: theme.palette.error.main,
+    '&:hover': {
+      backgroundColor: theme.palette.error.dark,
+      opacity: 0.9
+    }
+  },
+  fildText: {
+    backgroundColor: '#fff',
+  }
 }));
 
 export default function Sign() {
@@ -64,7 +77,7 @@ export default function Sign() {
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
-      <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+      <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square className={classes.ground}>
         <div className={classes.paper}>
           <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
@@ -79,10 +92,11 @@ export default function Sign() {
               required
               fullWidth
               id="email"
-              label="Email Address"
+              placeholder="Digite seu email"
               name="email"
               autoComplete="email"
               autoFocus
+              className={classes.fildText}
             />
             <TextField
               variant="outlined"
@@ -90,10 +104,11 @@ export default function Sign() {
               required
               fullWidth
               name="password"
-              label="Password"
+              placeholder="Digite sua senha"
               type="password"
               id="password"
               autoComplete="current-password"
+              className={classes.fildText}
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
@@ -103,7 +118,6 @@ export default function Sign() {
               type="submit"
               fullWidth
               variant="contained"
-              color="primary"
               className={classes.submit}
             >
               Entrar
