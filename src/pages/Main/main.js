@@ -6,7 +6,7 @@ import Header from '../../Components/Header/header'
 export default function Main() {
   return (
     <React.Fragment>
-      <Header title="AlicateDev" />
+      <Header />
 
     </React.Fragment>
 
