@@ -1,2 +1,1 @@
-# MegaHack
 # frontend
