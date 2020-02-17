@@ -4,15 +4,15 @@ import SignUp from './pages/SignUp/signUp'
 import Sign from './pages/Sign/sign'
 import Interact from './pages/Interact/interact'
 import Main from './pages/Main/main'
-import Feed from './pages/Feed/feed'
+import Perfil from './pages/Perfil/perfil'
 export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/signup" component={SignUp}></Route>
+        {/* <Route exact path="/signup" component={SignUp}></Route>
         <Route exact path="/sign" component={Sign}></Route>
-        <Route exact path="/interact" component={Interact}></Route>
-        <Route exact path="/feed" component={Feed}></Route>
+        <Route exact path="/interact" component={Interact}></Route> */}
+        <Route exact path="/perfil" component={Perfil}></Route>
         <Route exact path="/" component={Main}></Route>
       </Switch>
     </BrowserRouter>
