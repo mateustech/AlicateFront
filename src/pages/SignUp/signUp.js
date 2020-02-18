@@ -27,22 +27,28 @@ function Copyright() {
 }
 
 const useStyles = makeStyles(theme => ({
+ 
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: '#000'
+    backgroundColor: '#fff'
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.error.main,
   },
   form: {
-    width: '100%', // Fix IE 11 issue.
+    width: '100%',
     marginTop: theme.spacing(3),
   },
   submit: {
+    backgroundColor: theme.palette.error.main,
+    '&:hover': {
+      backgroundColor: theme.palette.error.dark,
+      opacity: 0.9
+    },
     margin: theme.spacing(3, 0, 2),
   },
 }));
@@ -51,6 +57,7 @@ export default function SignUp() {
   const classes = useStyles();
 
   return (
+
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
@@ -137,5 +144,6 @@ export default function SignUp() {
         <Copyright />
       </Box>
     </Container>
+
   );
 }
