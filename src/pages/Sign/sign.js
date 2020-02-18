@@ -132,7 +132,7 @@ export default function Sign() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link to='/sign' variant="body2">
+                <Link to='/signup' variant="body2">
                   {"Não possui uma conta? Inscrever-se"}
                 </Link>
               </Grid>

@@ -1,0 +1,34 @@
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 700px;
+  background-color: #3a3a3a;
+}
+.signup .avatar {
+  background-color: #e23328;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup .avatar svg {
+  font-size: 30px;
+  color: #fff;
+  transition: transform 0.2s;
+}
+.signup .avatar svg:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#check label {
+  font-size: 14px;
+  cursor: pointer;
+  color: #3a3a3a;
+}
