@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -37,8 +37,10 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function Media(props) {
+
   const { loading = false } = props;
   const classes = useStyles();
+
 
   return (
     <Card className={classes.card}>
@@ -103,6 +105,16 @@ Media.propTypes = {
 };
 
 export default function Facebook() {
+  const [user, setUserName] = useState('');
+
+  useEffect(()=>{
+    async function  loadInfo() {
+      const name = await localStorage.getItem('@alicate_name');
+      setUserName(name);
+    }
+    loadInfo();
+  });
+
   const classes = useStyles();
   return (
     <React.Fragment>
@@ -112,7 +124,7 @@ export default function Facebook() {
           <div className="profile">
 
             <img src={procfile} alt="Imagem de perfil" />
-            <p>Hermes Segundo</p>
+            <p>{user && user}</p>
           </div>
           <div className="itens">
             <div className="pref">

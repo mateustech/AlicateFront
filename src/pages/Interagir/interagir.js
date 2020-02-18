@@ -1,13 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
 
-// import { Container } from './styles';
-
-export default function Interagir() {
-  return (
-    <div />
-  );
-=======
 import { Zoom } from 'react-slideshow-image';
 import './interagir.css'
 import slide1 from '../../assents/slide2.png'
@@ -32,14 +24,13 @@ const zoomOutProperties = {
 
 export default function Slideshow() {
   return (
-    <div className="slide-container">
-      <Zoom {...zoomOutProperties}>
-        {
-          images.map(src => <img style={{ width: "100%" }} src={src} />)
-        }
-      </Zoom>
-    </div>
+      <div className="slide-container">
+        <Zoom {...zoomOutProperties}>
+          {
+            images.map(src => <img style={{ width: "100%" }} src={src} />)
+          }
+        </Zoom>
+      </div>
   )
->>>>>>> developer
-}
 
+}
