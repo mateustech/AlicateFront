@@ -1,13 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
 
-// import { Container } from './styles';
-
-export default function Interagir() {
-  return (
-    <div />
-  );
-=======
 import { Zoom } from 'react-slideshow-image';
 import './interagir.css'
 import slide1 from '../../assents/slide2.png'
@@ -40,6 +32,6 @@ export default function Slideshow() {
       </Zoom>
     </div>
   )
->>>>>>> developer
+
 }
 
