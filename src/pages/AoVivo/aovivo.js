@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 // Styles
 import './aovivo.css';
 import Header from '../../Components/Header/header'
@@ -20,7 +21,7 @@ export default function AoVivo() {
 
         </div>
         <div className="play">
-          <div className="button"><PlayArrowIcon /></div>
+          <div className="button"><Link to="/interact/serie"><PlayArrowIcon /></Link></div>
         </div>
       </div>
     </div >
