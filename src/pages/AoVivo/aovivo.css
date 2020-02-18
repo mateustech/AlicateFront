@@ -46,7 +46,7 @@
   position: absolute;
   bottom: 150px;
   right: 60px;
-  background-color: rgb(245, 61, 61);
+  background-color: #e23328;
   cursor: pointer;
 }
 .container2 .play .button:hover {

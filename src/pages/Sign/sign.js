@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     backgroundImage: 'url(https://source.unsplash.com/random)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
-    theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[50],
+      theme.palette.type === 'dark' ? theme.palette.grey[900] : theme.palette.grey[50],
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
@@ -60,8 +60,10 @@ const useStyles = makeStyles(theme => ({
   },
   submit: {
     backgroundColor: theme.palette.error.main,
+    marginBottom: 10,
     '&:hover': {
       backgroundColor: theme.palette.error.dark,
+      color: '#fff',
       opacity: 0.9
     }
   },
@@ -111,7 +113,7 @@ export default function Sign() {
               className={classes.fildText}
             />
             <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
+              control={<Checkbox value="remember" color="theme.palette.error.main" />}
               label="Relembre-me"
             />
             <Button
@@ -120,8 +122,9 @@ export default function Sign() {
               variant="contained"
               className={classes.submit}
             >
-              Entrar
+              <Link to="/">Entrar</Link>
             </Button>
+
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
@@ -129,7 +132,7 @@ export default function Sign() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link to='/signup' variant="body2">
+                <Link to='/sign' variant="body2">
                   {"Não possui uma conta? Inscrever-se"}
                 </Link>
               </Grid>
