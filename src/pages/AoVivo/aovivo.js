@@ -1,8 +1,8 @@
 import React from 'react';
 // Styles
 import './aovivo.css';
-import Header from '../../Components/Header/header'
-import bg from '../../assents/bgInterac.jpg'
+import Header from '../../components/Header/header'
+import bg from '../../assets/bgInterac.jpg'
 // Componentes
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 

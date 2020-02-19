@@ -9,11 +9,11 @@ export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/signup" component={SignUp}></Route>
-        <Route exact path="/sign" component={Sign}></Route>
-        <Route exact path="/interact" component={AoVivo}></Route>
-        <Route exact path="/perfil" component={Perfil}></Route>
-        <Route exact path="/" component={Main}></Route>
+        <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/sign" component={Sign} />
+        <Route exact path="/interact" component={AoVivo} />
+        <Route exact path="/perfil" component={Perfil} />
+        <Route exact path="/" component={Main} />
       </Switch>
     </BrowserRouter>
   )

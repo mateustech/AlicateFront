@@ -15,11 +15,11 @@ import CommentOutlinedIcon from '@material-ui/icons/CommentOutlined';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
-import Header from '../../Components/Header/header'
-import procfile from '../../assents/procfile.jpg'
-import ana from '../../assents/ana.jpg'
-import prog1 from '../../assents/prog1.jpg'
-import prog2 from '../../assents/prog2.jpg'
+import Header from '../../components/Header/header'
+import procfile from '../../assets/procfile.jpg'
+import ana from '../../assets/ana.jpg'
+import prog1 from '../../assets/prog1.jpg'
+import prog2 from '../../assets/prog2.jpg'
 
 import "./perfil.css"
 const useStyles = makeStyles(theme => ({

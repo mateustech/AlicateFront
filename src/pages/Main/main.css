@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+:root {
+    --primary-color: #FE0000;
+}
+
+.bg-project {
+    background-color: #000;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 700px;
+    background: url("../../assets/bgHome.png") no-repeat top center;
+    background-color: black;
+    background-size: 100% 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 85%;
+    height: 87%;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+
+.title-featured {
+    text-align: left;
+    font: Bold 55px/79px Roboto;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.classification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classification .age {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31px;
+    height: 31px;
+    color: #FFF;
+    border-radius: 2px;
+    font: Bold 18px Roboto;
+    letter-spacing: -1.5px;
+    background-color: var(--primary-color);
+    opacity: 1;
+}
+
+.classification .description {
+    margin-left: 15px ;
+    text-align: left;
+    font: 300 20px Roboto;
+    letter-spacing: 0;
+    color: #A7A7A7;
+    opacity: 1;
+}
+
+.synopsis {
+    width: 540px;
+    margin: 29px 0;
+    text-align: left;
+    font: 300 15px/24px Roboto;
+    line-height: 1.2em;
+    color: #A7A7A7;
+    opacity: 1;
+}
+
+.icon-more {
+    font-size: 12px;
+    border-radius: 50px;
+    padding: 0 3px;
+    margin-right: 5px;
+    border: 2px solid #707070;
+}
+
+/* BOTÕES */
+
+.btn {
+    width: 200px;
+    height: 48px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+.btn-outline-secondary {
+    text-align: center;
+    font: 400 19px Roboto;
+    color: #A7A7A7;
+    background-color: transparent;
+    border: 4px solid #707070;
+}

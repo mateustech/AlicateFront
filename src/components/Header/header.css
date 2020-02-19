@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  position: absolute;
+  z-index: 1000;
+}
+
+.links {
+  text-align: center;
+  width: 80%;
+}
+
+.notifications {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 9%;
+}
+
+a {
+  font-size: 17px;
+  color: #ccc;
+  margin: 0 23px;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: all .1s linear;
+}
+
+a:hover {
+  font-weight: 400;
+  color: #fff;
+  opacity: 1;
+}
